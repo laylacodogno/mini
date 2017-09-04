@@ -3,24 +3,34 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Pages</h1>
-
-  {{ content }}
-
-  <ul class="post-list">
-    {% for page in site.pages %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="page-meta">{{ page.date | date: date_format }}</span>
-
-        <h2>
-          <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+  <section id="top-header">
+    <div class="background"></div>
+      <div class="wrapper">
+        <div class="top-text">
+          <h1>SIM, É VERDADE <br/>VAMOS CASAR</h1>
+        </div>
+      </div>
+  </section>
+  <section id="historia">
+    <div class="wrapper">
+      <h2 class="section-title">Nossa história começou assim...</h2>
+      <p></p>
+    </div>
+  </section>
+  <section id="presentes">
+    <div class="wrapper">
+      <h2 class="section-title">PRESENTES</h2>
+      <div class="text-info">
+        <p>quem não ama presente né?</p>
+        <p>principalmente nós que estamos montando <b>nossa primeira casinha</b>!</p>
+        <br>
+        <p>escolhemos o <b>site de presentes</b> com a lista pois lá teremos a possibilidade de escolher do jeitinho que <b>sempre sonhamos</b>.</p>
+          <a href="" class="button">VER A LISTA DE PRESENTES</a>
+      </div>
+      <div class="img-info">
+        <img src="/images/01.jpg" alt="">
+      </div>
+      <hr>
+    </div>
+  </section>
 </div>
