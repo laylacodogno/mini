@@ -84,6 +84,20 @@
     }
   }
   #historia{
+    min-height: 40vh;
+    .info{
+      text-align: center;
+      margin-top: 50px;
+
+      >.date{
+        text-align: center;
+        width: 120px;
+        display: inline-block;
+        &.casamento{
+          border: 1px solid $secondary-color;
+        }
+      }
+    }
   }
 
   #casamento{
@@ -98,6 +112,7 @@
     .info{
       margin: 10px auto;
       text-align: center;
+      font-size: 18px;
       > .info-item{
         display: inline-block;
         max-width: 50%;
@@ -117,12 +132,43 @@
       }
     }
   }
+
+  #confirmacao{
+    background-image: url('/images/floral.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15vh;
+    .section-title{
+      text-align: center;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+    .text-info{
+      text-align: center;
+      font-size: 15px;
+      > a.button{
+        max-width: 290px;
+      }
+      >.details{
+        border: 1px solid $brand-color;
+        padding: 10px;
+        text-align: left;
+        font-size: 12px;
+        margin: 80px auto;
+        max-width: 50vw;
+        >p{
+          margin: 2px;
+        }
+      }
+    }
+  }
+
   #dicas{
     position: relative;
       >.background{
         z-index: -1;
         position: absolute;
-        top: -100px;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
@@ -130,7 +176,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.4;
+        opacity: 0.2;
       }
       .section-title{
         color: $brand-color;
@@ -204,6 +250,52 @@
           color: $secondary-color;
           font-family: 'Anton';
         }
+      }
+    }
+  }
+
+  #casanova{
+    min-height: 300px;
+    background-color: $brand-color;
+    color: white;
+
+    .section-title{
+      text-align: center;
+      font-size: 40px;
+    }
+    .text-info{
+      text-align: center;
+      > hr{
+        max-width: 200px;
+        margin: 0 auto;
+        border: 1px dashed white;
+      }
+      >p{
+        margin: 15px auto;
+      }
+      >#date{
+        font-family: 'Anton';
+        color: $secondary-color;
+        font-size: 18px;
+      }
+    }
+  }
+
+  #footer{
+    min-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    >hr{
+      color: $brand-color;
+      max-width: 100px;
+      margin: 0 auto;
+      border: 4px solid;
+      margin-bottom: 20px;
+    }
+    >p{
+      >span{
+        font-weight: bold;
+        color: $brand-color;
       }
     }
   }
