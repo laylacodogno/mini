@@ -129,6 +129,11 @@ section{
         max-width: 50%;
         padding: 20px;
         vertical-align: top;
+        @media screen and (max-width: 640px){
+          display: block;
+          max-width: 100%;
+          text-align: center;
+        }
         > h3{
           font-weight: bold;
           letter-spacing: 6px;
@@ -167,6 +172,9 @@ section{
         font-size: 12px;
         margin: 80px auto;
         max-width: 50vw;
+        @media screen and (max-width: 640px){
+          max-width: 90vw;
+        }
         >p{
           margin: 2px;
         }
@@ -202,6 +210,9 @@ section{
     .hotel, .salao{
       margin: 50px auto;
       max-width: 40vw;
+      @media screen and (max-width: 640px){
+        max-width: 90vw;
+      }
 
       >h3{
         font-family: 'Anton'
