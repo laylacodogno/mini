@@ -161,7 +161,7 @@ section{
     }
     .text-info{
       text-align: center;
-      font-size: 15px;
+      font-size: 16px;
       > a.button{
         max-width: 290px;
       }
@@ -197,7 +197,7 @@ section{
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.2;
+        opacity: 0.1;
       }
       .section-title{
         color: $brand-color;
@@ -207,19 +207,22 @@ section{
       border: 4px solid $brand-color;
       margin: 0 auto;
     }
-    .hotel, .salao{
+    .hotel, .salao, .vestimentas{
       margin: 50px auto;
-      max-width: 40vw;
+      max-width: 50vw;
       @media screen and (max-width: 640px){
         max-width: 90vw;
       }
 
       >h3{
-        font-family: 'Anton'
+        font-family: 'Anton';
+        font-size: 18px;
       }
       >p{
+        font-size: 12px;
         >a{
           max-width: 200px;
+          min-width: 120px;
           margin: 20px auto;
           font-weight: bold;
           padding: 10px;
@@ -228,6 +231,16 @@ section{
           &:hover{
             text-decoration: none;
             background-color: $secondary-color;
+          }
+        }
+      }
+    }
+    .vestimentas{
+      >p{
+        >a{
+          display: inline-block;
+          @media screen and (max-width: 640px){
+            display: block;
           }
         }
       }
